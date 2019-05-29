@@ -6,7 +6,7 @@ class Value(Enum):
     A1 = 1
     A2 = 2
     A3 = 3
-    B = 4
+    B1 = 4
 
 
 class States(Enum):
@@ -15,7 +15,6 @@ class States(Enum):
 
 
 class System:
-    # initial state of fields
     __VALUE_INITIAL = 0
     __STATES_INITIAL = States.P
 
@@ -26,7 +25,7 @@ class System:
             return self._q(var)
 
     def _p(self, inp):
-        if inp == Value.B:
+        if inp == Value.B1:
             self.z = 0
             return 1
         if inp == Value.A3:
@@ -38,7 +37,7 @@ class System:
             return 0
 
     def _q(self, inp):
-        if inp == Value.B:
+        if inp == Value.B1:
             self.z = 1
             return 1
         if self.z % 2 == 0:

@@ -3,9 +3,9 @@ import avtomat
 from avtomat import Value
 
 W = [
-    [Value.B, Value.A0, Value.A0],
-    [Value.B, Value.A3],
-    [Value.A0, Value.B, Value.A0],
+    [Value.B1, Value.A0, Value.A0],
+    [Value.B1, Value.A3],
+    [Value.A0, Value.B1, Value.A0],
     [Value.A0, Value.A0, Value.A0, Value.A0],
     [Value.A0, Value.A0, Value.A3],
     [Value.A0, Value.A1, Value.A0, Value.A0],
@@ -16,9 +16,9 @@ W = [
     [Value.A0, Value.A3, Value.A3],
     [Value.A1, Value.A0],
     [Value.A2, Value.A0],
-    [Value.A3, Value.B, Value.A0, Value.A0],
-    [Value.A3, Value.B, Value.A3],
-    [Value.A3, Value.A0, Value.B, Value.A0],
+    [Value.A3, Value.B1, Value.A0, Value.A0],
+    [Value.A3, Value.B1, Value.A3],
+    [Value.A3, Value.A0, Value.B1, Value.A0],
     [Value.A3, Value.A0, Value.A0, Value.A0],
     [Value.A3, Value.A0, Value.A0, Value.A3],
     [Value.A3, Value.A0, Value.A1, Value.A0],
